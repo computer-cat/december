@@ -14,10 +14,7 @@ cp -avf "/ctx/system_files"/. /
 
 # this installs a package from fedora repos
 dnf install -y https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y
-dnf install -y fastfetch steam mangohud tailscale zoxide
-
-dnf install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
-dnf install -y gamescope gamescope-session-plus gamescope-session-steam
+dnf install -y fastfetch steam mangohud tailscale zoxide gamescope gamescope-session-plus gamescope-session-steam
 
 # Use a COPR Example:
 #
