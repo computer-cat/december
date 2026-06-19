@@ -2,11 +2,6 @@
 
 set -euxo pipefail
 
-LIBXFCE4WINDOWING_REF="${LIBXFCE4WINDOWING_REF:-master}"
-LIBXFCE4UI_REF="${LIBXFCE4UI_REF:-master}"
-XFCE4_PANEL_REF="${XFCE4_PANEL_REF:-master}"
-XFDESKTOP_REF="${XFDESKTOP_REF:-master}"
-
 #deps
 dnf -y builddep libxfce4windowing libxfce4ui xfce4-panel xfdesktop
 dnf -y install git meson ninja-build gtk-layer-shell-devel make cmake \
