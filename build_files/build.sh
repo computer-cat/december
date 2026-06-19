@@ -9,9 +9,6 @@ cp -avf "/ctx/system_files"/. /
 dnf copr enable -y yalter/niri
 dnf install -y niri
 
-#essentials
-dnf -y install thunar
-
 
 #misc utils
 dnf install -y tailscale zoxide fastfetch
