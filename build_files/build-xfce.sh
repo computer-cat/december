@@ -9,7 +9,7 @@ XFDESKTOP_REF="${XFDESKTOP_REF:-master}"
 
 #deps
 dnf -y builddep libxfce4windowing libxfce4ui xfce4-panel xfdesktop
-dnf -y install git meson ninja-build gtk-layer-shell-devel make cmake gstreamer1 gstreamer1-devel gstreamer1-plugins-base-devel
+dnf -y install git meson ninja-build gtk-layer-shell-devel make cmake gstreamer1 gstreamer1-devel gstreamer1-plugins-base-devel gstreamer1-plugins-good-gtk
 
 cd /tmp
 
