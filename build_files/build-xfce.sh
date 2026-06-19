@@ -32,7 +32,7 @@ cd /tmp
 #xfce4-panel
 git clone --depth 1 https://gitlab.xfce.org/xfce/xfce4-panel.git
 cd xfce4-panel
-meson setup build --prefix=/usr -Dwayland=enabled -Dgtk-layer-shell=enabled,
+meson setup build --prefix=/usr -Dwayland=enabled -Dgtk-layer-shell=enabled
 meson compile -C build
 meson install -C build
 cd /tmp
