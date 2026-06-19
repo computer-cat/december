@@ -5,16 +5,20 @@ set -ouex pipefail
 # Copy the contents of system_files/ of the git repo to /
 cp -avf "/ctx/system_files"/. /
 
-### Install packages
+#wm
+dnf copr enable -y yalter/niri
+dnf install -y niri
 
-# Packages can be installed from any enabled yum repo on the image.
-# RPMfusion repos are available by default in ublue main images
-# List of rpmfusion packages can be found here:
-# https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/43/x86_64/repoview/index.html&protocol=https&redirect=1
+#essentials
+dnf -y install thunar
 
-# this installs a package from fedora repos
+
+#misc utils
+dnf install -y tailscale zoxide fastfetch
+
+#gamerslop
 dnf install -y https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y
-dnf install -y fastfetch steam mangohud tailscale zoxide gamescope gamescope-session-plus gamescope-session-steam
+dnf install -y steam mangohud gamescope
 
 # Use a COPR Example:
 #

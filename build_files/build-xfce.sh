@@ -45,3 +45,5 @@ cd xfce4-panel
 meson setup build -Dwayland=enabled
 meson compile -C build
 meson install -C build
+
+dnf -y install xfce4-appfinder
