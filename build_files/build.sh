@@ -28,3 +28,4 @@ dnf install -y steam mangohud gamescope
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket
+systemctl enable sddm

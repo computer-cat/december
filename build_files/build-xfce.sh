@@ -45,3 +45,10 @@ cd xfdesktop
 meson setup build --prefix=/usr -Dwayland=enabled
 meson compile -C build
 meson install -C build
+
+#xfce4-settings
+git clone --depth 1 https://gitlab.xfce.org/xfce/xfce4-settings.git
+cd xfce4-settings
+meson setup build --prefix=/usr
+meson compile -C build
+meson install -C build
