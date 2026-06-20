@@ -42,4 +42,4 @@ meson compile -C build
 meson install -C build
 
 #xfce4-settings
-dnf -y install xfce4-settings thunar-archive-plugin
+dnf -y install xfce4-settings thunar-archive-plugin xfce4-whiskermenu
