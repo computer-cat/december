@@ -35,11 +35,11 @@ meson install -C build
 cd /tmp
 
 #xfdesktop
-git clone --depth 1 https://gitlab.xfce.org/xfce/xfdesktop.git
-cd xfdesktop
-meson setup build --prefix=/usr -Dwayland=enabled
-meson compile -C build
-meson install -C build
+#git clone --depth 1 https://gitlab.xfce.org/xfce/xfdesktop.git
+#cd xfdesktop
+#meson setup build --prefix=/usr -Dwayland=enabled
+#meson compile -C build
+#meson install -C build
 
 #xfce4-settings
 dnf -y install xfce4-settings thunar-archive-plugin xfce4-whiskermenu
