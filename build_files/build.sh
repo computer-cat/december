@@ -12,7 +12,7 @@ dnf install -y niri --setopt=install_weak_deps=False
 
 #misc utils
 dnf install -y tailscale zoxide fastfetch xfce4-terminal \
-    sddm qt6ct fuzzel swaybg matugen foot swaylock imagemagick advancecomp
+    sddm qt6ct fuzzel swaybg matugen foot swaylock wofi
 
 #gamerslop
 dnf install -y https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y
