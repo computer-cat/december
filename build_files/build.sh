@@ -15,7 +15,7 @@ dnf install -y --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/ter
 dnf install -y tailscale zoxide fastfetch xfce4-terminal \
     qt6ct swaybg matugen foot swaylock \
     xdg-desktop-portal-gtk xdg-desktop-portal-gnome \
-    gnome-keyring fuzzel micro awww tuigreet
+    gnome-keyring fuzzel micro awww tuigreet polkit-kde
 
 #gamerslop
 dnf install -y https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y
