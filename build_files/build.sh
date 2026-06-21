@@ -11,7 +11,7 @@ dnf install -y niri --setopt=install_weak_deps=False
 
 
 #misc utils
-dnf install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
+dnf install -y --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
 dnf install -y tailscale zoxide fastfetch xfce4-terminal \
     qt6ct swaybg matugen foot swaylock \
     xdg-desktop-portal-gtk xdg-desktop-portal-gnome \
