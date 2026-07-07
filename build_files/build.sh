@@ -11,7 +11,8 @@ dnf copr enable -y yalter/niri
 dnf install -y niri --setopt=install_weak_deps=False
 
 #shell
-dnf install -y noctalia
+dnf copr enable -y lionheartp/Hyprland
+dnf install -y noctalia-git noctalia-greeter
 
 #misc utils
 dnf install -y --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
