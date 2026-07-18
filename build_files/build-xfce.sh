@@ -13,9 +13,10 @@ cd /tmp
 #libxfce4windowing
 git clone --depth 1 https://gitlab.xfce.org/xfce/libxfce4windowing.git
 cd libxfce4windowing
-./autogen.sh --prefix=/usr
-make
-make install
+git submodule update --init --recursive --depth 1
+meson setup build --prefix=/usr
+meson compile -C build
+meson install -C build
 cd /tmp
 
 #libxfce4ui
