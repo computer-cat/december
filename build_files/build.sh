@@ -5,6 +5,8 @@ set -ouex pipefail
 # Copy the contents of system_files/ of the git repo to /
 cp -avf "/ctx/system_files"/. /
 
+dnf install -y dnf5-plugins
+
 #wm
 dnf copr enable -y yalter/niri
 dnf install -y niri --setopt=install_weak_deps=False
