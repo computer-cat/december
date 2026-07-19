@@ -72,6 +72,15 @@ meson compile -C build
 meson install -C build
 cd /tmp
 
+#xfwm4
+git clone --depth 1 https://gitlab.xfce.org/xfce/xfwm4.git
+cd xfwm4
+git submodule update --init --recursive --depth 1
+meson setup --wipe build
+meson compile -C build
+meson install -C build
+cd /tmp
+
 #xfwl4
 git clone --depth 1 https://gitlab.xfce.org/xfce/xfwl4.git
 cd xfwl4
